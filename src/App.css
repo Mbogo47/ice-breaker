@@ -1,0 +1,132 @@
+/* body {
+  font-family: "Truculenta", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.icebreaker-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icebreaker {
+  font-size: 1.4rem;
+  color: #555;
+  font-style: italic;
+}
+
+.btn {
+  background-color: #4fa94d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  width: 15rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+ */
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background-color: #fefefe;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Icebreaker Box */
+.icebreaker-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Icebreaker text */
+.icebreaker {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+  padding: 15px 20px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icebreaker:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Button */
+.btn {
+  padding: 10px 25px;
+  background: linear-gradient(90deg, #6a5af9, #a279f0);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(106,90,249,0.3);
+}
+
+/* Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+/* Error message */
+.error {
+  color: #ff4d4f;
+  background-color: #ffe5e5;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
