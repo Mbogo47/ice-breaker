@@ -1,56 +1,3 @@
-/* body {
-  font-family: "Truculenta", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 500px;
-  width: 90%;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-  color: #333;
-  margin-bottom: 30px;
-}
-
-.icebreaker-box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.icebreaker {
-  font-size: 1.4rem;
-  color: #555;
-  font-style: italic;
-}
-
-.btn {
-  background-color: #4fa94d;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  width: 15rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-
-.error {
-  color: red;
-  font-weight: bold;
-}
- */
 /* Container */
 .container {
   max-width: 500px;
@@ -61,6 +8,18 @@ h2 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Heading */
@@ -75,7 +34,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+   opacity: 0;
   gap: 15px;
+  transition: opacity 0.8s ease-in-out;
 }
 
 /* Icebreaker text */
@@ -87,8 +48,9 @@ h2 {
   background-color: #f0f4f8;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.8s ease, box-shadow 0.2s ease;
 }
+
 
 .icebreaker:hover {
   transform: translateY(-3px);
@@ -119,6 +81,31 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 30px 0;
+}
+
+/* Error message */
+.error {
+  color: #ff4d4f;
+  background-color: #ffe5e5;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* First-load Welcome Message */
+.welcome-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 0;
+}
+
+.welcome-loader .welcome {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #555;
 }
 
 /* Error message */
